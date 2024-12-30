@@ -6,14 +6,111 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
   font-family: var(--font-geist-sans);
+}
+.logoContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  animation: slideUp 0.7s forwards ease-in-out 2s;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 17vw;
+  background-color: white;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 30px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  animation: 1s fadeIn forwards 2.4s;
+  opacity: 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+}
+
+.menuItem a {
+  transition: 0.3s;
+}
+
+.menuItem a:hover {
+  color: #bb1f1f;
+  transform: scale(1.05);
+}
+
+.slash {
+  width: 1px;
+  height: 10vw;
+  background: white;
+  transform: rotate(30deg);
+  display: inline-flex;
+  margin: 0 6vw;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, calc(-100% - 60px));
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,10 +165,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -127,6 +221,15 @@ a.secondary {
 }
 
 @media (max-width: 600px) {
+  .menu {
+    font-size: 16px;
+  }
+  .logo {
+    width: 100vw;
+    height: 100vh;
+    padding: 90px;
+  }
+
   .page {
     padding: 32px;
     padding-bottom: 80px;
@@ -163,6 +266,5 @@ a.secondary {
 
 @media (prefers-color-scheme: dark) {
   .logo {
-    filter: invert();
   }
 }
