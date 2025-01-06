@@ -184,7 +184,7 @@ a.secondary {
   width: auto;
 }
 .slider {
-  padding-top: 20vh;
+  padding-top: 14vh;
   font-size: 12px;
   text-align: center;
 }
@@ -234,7 +234,7 @@ a.secondary {
     font-size: 16px;
   }
   .slideText {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .pageTitle {
     font-size: 24px;

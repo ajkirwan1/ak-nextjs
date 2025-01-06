@@ -10,7 +10,11 @@ export default function WhoWeAre() {
         <span className={styles.slash}></span>
         <span className={styles.whatWeDo}>WHAT WE DO</span>
       </h1>
-
+      <div className={styles.headlineContainer}>
+        <span className={styles.headline}>
+          Full service web&nbsp;development
+        </span>
+      </div>
       <div className={styles.contactColumns}>
         <div className={styles.columnLeft}>
           <div className={styles.columnText}>
@@ -45,6 +49,13 @@ export default function WhoWeAre() {
       <div className={styles.backButton}>
         <span className={styles.arrowLeft}>⇦</span>
         <Link href="/">BACK</Link>
+      </div>
+
+      <div className={styles.corners}>
+        <div className={styles.corner}></div>
+        <div className={styles.corner}></div>
+        <div className={styles.corner}></div>
+        <div className={styles.corner}></div>
       </div>
     </>
   );

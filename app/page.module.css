@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 17vw;
+  padding: 23vw;
   background-color: white;
 }
 
@@ -67,7 +67,15 @@
   transition: 0.3s;
 }
 
-.menuItem a:hover {
+.menuItem:nth-child(1) a:hover {
+  color: #e2bb29a6;
+  transform: scale(1.05);
+}
+.menuItem:nth-child(2) a:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+.menuItem:nth-child(3) a:hover {
   color: #bb1f1f;
   transform: scale(1.05);
 }
