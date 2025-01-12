@@ -148,9 +148,9 @@ a.secondary {
   background: none !important;
 }
 
-::placeholder {
+/* ::placeholder {
   color: white;
-}
+} */
 
 .contactColumns {
   justify-content: center;
