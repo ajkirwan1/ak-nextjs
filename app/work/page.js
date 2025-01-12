@@ -10,9 +10,9 @@ import { register } from "swiper/element/bundle";
 import "swiper/css";
 register();
 
-const swiper = new Swiper(".swiper", {
-  modules: [Navigation],
-});
+// const swiper = new Swiper(".swiper", {
+//   modules: [Navigation],
+// });
 
 import Link from "next/link";
 
