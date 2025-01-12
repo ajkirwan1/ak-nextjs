@@ -8,7 +8,7 @@ import { Swiper } from "swiper";
 import { Navigation } from "swiper/modules";
 import { register } from "swiper/element/bundle";
 import "swiper/css";
-
+register();
 
 const swiper = new Swiper(".swiper", {
   modules: [Navigation],
@@ -17,7 +17,6 @@ const swiper = new Swiper(".swiper", {
 import Link from "next/link";
 
 export default function Work() {
-  register();
   return (
     <>
       <h1 className={styles.pageTitle}>WORK</h1>
