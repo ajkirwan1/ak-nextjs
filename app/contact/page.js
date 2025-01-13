@@ -8,16 +8,15 @@ export default function Contact() {
   return (
     <>
       <h1 className={styles.pageTitle}>CONTACT</h1>
-
       <div className={styles.contactColumns}>
         <div className={styles.columnLeft}>
           <Image
             src={envelope}
-            alt="mail contact"
+            alt="mail contact icon"
             className={styles.envelope}
           />
           <div className={styles.letsTalk}>
-            <p>LET'S DISCUSS YOUR PROJECT</p>
+            <p>LET&aposS DISCUSS YOUR PROJECT</p>
             <div className={styles.email}>akdevelopmentstudio@gmail.com</div>
           </div>
         </div>
