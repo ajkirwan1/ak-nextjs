@@ -1,10 +1,12 @@
+/** @format */
+
 import Image from "next/image";
 import ContactForm from "../components/ui/contactForm";
 import styles from "./page.module.css";
 import envelope from "@/public/envelope.png";
 import Link from "next/link";
 
-export default function Contact() {
+export default function ContactPage() {
   return (
     <>
       <h1 className={styles.pageTitle}>CONTACT</h1>
@@ -22,7 +24,7 @@ export default function Contact() {
         </div>
         <div className={styles.columnRight}>
           <div className={styles.contactForm}>
-            <ContactForm></ContactForm>
+            <ContactForm />
           </div>
         </div>
       </div>
