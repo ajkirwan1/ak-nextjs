@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import logo from "@/public/a-k-logo.png";
 
 export default function Home() {
+  // throw Error
+  console.log(process.env.REACT_APP_BASE_URL)
   return (
     // <div className={styles.page}>
 
