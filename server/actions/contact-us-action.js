@@ -6,7 +6,7 @@ import ValidateContactForm from "@/lib/validation/contact-form-validate";
 
 export async function ContactUs(_, formData) {
   // let validationErrors = [];
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
   const name = formData.get("name");
   const surname = formData.get("surname");
   const email = formData.get("email");
@@ -44,6 +44,6 @@ export async function ContactUs(_, formData) {
       success: "Your message was sent successfully!",
     };
   } catch (error) {
-    return {dbError: "An error occured submitting your message"}
+    return { dbError: "An error occured submitting your message" };
   }
 }
