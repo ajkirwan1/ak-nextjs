@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import mockupIndigo from "@/public/indigomock.png";
+import mockupIndigo from "@/public/indigo2mock.png";
 import mockIcare from "@/public/mockIcare.png";
 import mockSimlift from "@/public/mockupsimlift.png";
 import styles from "./page.module.css";

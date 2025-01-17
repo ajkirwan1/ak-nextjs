@@ -90,9 +90,14 @@ a.secondary {
   display: block;
 }
 .letsTalk p {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 25px;
   letter-spacing: 0.15rem;
+}
+.header h1 {
+  font-size: 27px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .backButton {
@@ -171,7 +176,7 @@ a.secondary {
 }
 .email {
   margin-top: 40px;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 0.1rem;
 }
 .copyright {

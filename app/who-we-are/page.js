@@ -11,9 +11,7 @@ export default function WhoWeAre() {
         <span className={styles.whatWeDo}>WHAT WE DO</span>
       </h1>
       <div className={styles.headlineContainer}>
-        <span className={styles.headline}>
-          Full service web&nbsp;development
-        </span>
+        <span className={styles.headline}>Full Service Web Development</span>
       </div>
       <div className={styles.contactColumns}>
         <div className={styles.columnLeft}>

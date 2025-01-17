@@ -96,7 +96,7 @@ export default function ContactForm() {
             <p>Your message is pending......</p>
           ) : (
             <button disabled={isPending} type="submit">
-              Send <span>➔</span>
+              Send <span>⇨</span>
             </button>
           )}
         </Form>
