@@ -93,7 +93,7 @@ export default function ContactForm() {
             <p>{state.validationErrors.message}</p>
           )}
           {isPending ? (
-            <p>Your message is pending......</p>
+            <p>Your message is pending...</p>
           ) : (
             <button disabled={isPending} type="submit">
               Send <span>⇨</span>
