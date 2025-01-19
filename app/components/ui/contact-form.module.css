@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
 }
+.inputWrapper {
+  margin-bottom: 30px;
+}
+.inputWrapper p {
+  font-size: 18px;
+}
 
 .buttonWrapper button {
   height: 4vh;
@@ -11,6 +17,9 @@
   border-radius: 2px;
   font-size: 12px;
 }
+.contactForm {
+  width: 25vw;
+}
 
 .dbErrorWrapper {
   text-align: center;
@@ -18,4 +27,21 @@
 
 .dbErrorWrapper p {
   margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .buttonWrapper button {
+    height: 4vh;
+    width: 25vw;
+    font-size: 13px;
+  }
+  .contactForm {
+    width: 60vw;
+  }
+  .inputWrapper {
+    margin-bottom: 20px;
+  }
+
+  .inputWrapper p {
+    font-size: 16px;
+  }
 }

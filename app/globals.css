@@ -56,6 +56,29 @@ button {
   outline: none;
   box-shadow: none;
 }
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.button-wrapper button {
+  height: 4vh;
+  width: 10vw;
+  background-color: #efeff0;
+  color: black;
+  border-radius: 2px;
+  font-size: 12px;
+}
 
 .menuItem a:hover {
   color: #e2bb29a6;
@@ -64,5 +87,12 @@ button {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 15px;
+    line-height: 2rem;
   }
 }

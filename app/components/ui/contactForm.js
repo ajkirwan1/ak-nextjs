@@ -58,50 +58,64 @@ export default function ContactForm() {
               }}
               onClick={handleReset}
             >
-              Try again <span>➔</span>
+              TRY AGAIN <span></span>
             </motion.button>
           </div>
         </div>
       ) : (
-        <Form action={formAction}>
-          <input
-            name="name"
-            type="name"
-            placeholder="Name"
-            value={data.name}
-            onChange={handleChange}
-          />
-          {state.validationErrors?.name && <p>{state.validationErrors.name}</p>}
-          <input
-            name="surname"
-            type="name"
-            placeholder="Surname"
-            value={data.surname}
-            onChange={handleChange}
-          />
-          {state.validationErrors?.surname && (
-            <p>{state.validationErrors.surname}</p>
-          )}
-          <input
-            name="email"
-            type="email"
-            placeholder="Email"
-            value={data.email}
-            onChange={handleChange}
-          />
-          {state.validationErrors?.email && (
-            <p>{state.validationErrors.email}</p>
-          )}
-          <textarea
-            placeholder="Message"
-            name="message"
-            type="text"
-            value={data.message}
-            onChange={handleChange}
-          />
-          {state.validationErrors?.message && (
-            <p>{state.validationErrors.message}</p>
-          )}
+        <Form className={classes.contactForm} action={formAction}>
+          <div className={classes.inputWrapper}>
+            <input
+              name="name"
+              type="name"
+              placeholder="Name"
+              value={data.name}
+              onChange={handleChange}
+            />
+            {state.validationErrors?.name && (
+              <p>{state.validationErrors.name}</p>
+            )}
+          </div>
+
+          <div className={classes.inputWrapper}>
+            <input
+              name="surname"
+              type="name"
+              placeholder="Surname"
+              value={data.surname}
+              onChange={handleChange}
+            />
+            {state.validationErrors?.surname && (
+              <p>{state.validationErrors.surname}</p>
+            )}
+          </div>
+
+          <div className={classes.inputWrapper}>
+            <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              value={data.email}
+              onChange={handleChange}
+            />
+            {state.validationErrors?.email && (
+              <p>{state.validationErrors.email}</p>
+            )}
+          </div>
+
+          <div className={classes.inputWrapper}>
+            <textarea
+              placeholder="Message"
+              name="message"
+              type="text"
+              value={data.message}
+              onChange={handleChange}
+            />
+            {state.validationErrors?.message && (
+              <p>{state.validationErrors.message}</p>
+            )}
+          </div>
+
           {isPending ? (
             <p>Your message is pending...</p>
           ) : (
