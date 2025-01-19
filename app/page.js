@@ -7,7 +7,6 @@ import { motion } from "motion/react";
 import { AnimatePresence } from "motion/react";
 
 export default function Home() {
-  throw Error;
   console.log(process.env.REACT_APP_BASE_URL);
   return (
     // <div className={styles.page}>
