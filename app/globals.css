@@ -45,6 +45,18 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 23px;
+  line-height: 2rem;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .menuItem a:hover {
   color: #e2bb29a6;
 }

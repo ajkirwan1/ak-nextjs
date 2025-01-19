@@ -1,0 +1,21 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonWrapper button {
+  height: 4vh;
+  width: 10vw;
+  background-color: #efeff0;
+  color: black;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.dbErrorWrapper {
+  text-align: center;
+}
+
+.dbErrorWrapper p {
+  margin-bottom: 30px;
+}

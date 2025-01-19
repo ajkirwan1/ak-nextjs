@@ -21,7 +21,6 @@ export default function ContactPage() {
             <div className={styles.header}>
               <h1>LET'S BRAND TOGETHER!</h1>
             </div>
-
             <p> Discuss your project with us </p>
             <div className={styles.email}>akdevelopmentstudio@gmail.com</div>
           </div>

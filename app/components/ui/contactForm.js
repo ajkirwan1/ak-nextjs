@@ -5,6 +5,8 @@ import { useState } from "react";
 import Form from "next/form";
 import { ContactUs } from "@/server/actions/contact-us-action";
 import { useActionState } from "react";
+import classes from "./contact-form.module.css";
+import { motion } from "motion/react";
 
 export default function ContactForm() {
   const initialState = {
@@ -46,12 +48,20 @@ export default function ContactForm() {
   return (
     <>
       {state.dbError ? (
-        <>
+        <div className={classes.dbErrorWrapper}>
           <p>{state.dbError}</p>
-          <button onClick={handleReset}>
-            Try again <span>➔</span>
-          </button>
-        </>
+          <div className={classes.buttonWrapper}>
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
+              onClick={handleReset}
+            >
+              Try again <span>➔</span>
+            </motion.button>
+          </div>
+        </div>
       ) : (
         <Form action={formAction}>
           <input
@@ -95,9 +105,18 @@ export default function ContactForm() {
           {isPending ? (
             <p>Your message is pending...</p>
           ) : (
-            <button disabled={isPending} type="submit">
-              Send <span>⇨</span>
-            </button>
+            <div className={classes.buttonWrapper}>
+              <motion.button
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.3 },
+                }}
+                disabled={isPending}
+                type="submit"
+              >
+                SEND <span></span>
+              </motion.button>
+            </div>
           )}
         </Form>
       )}
