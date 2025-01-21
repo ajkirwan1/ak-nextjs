@@ -1,33 +1,46 @@
+/** @format */
+
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import mockupIndigo from "@/public/indigo2mock.png";
 import mockIcare from "@/public/mockIcare.png";
 import mockSimlift from "@/public/mockupsimlift.png";
 import styles from "./page.module.css";
-import { Swiper } from "swiper";
-import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+
 import { register } from "swiper/element/bundle";
 import "swiper/css";
+import "swiper/css/navigation";
 register();
-
-// const swiper = new Swiper(".swiper", {
-//   modules: [Navigation],
-// });
 
 import Link from "next/link";
 
 export default function Work() {
+  const [firstSwiper, setFirstSwiper] = useState(null);
+
+  const handleSwiper = (swiper) => {
+    if (!swiper.autoplay.paused) {
+      swiper.autoplay.pause();
+    } else {
+      swiper.autoplay.resume();
+    }
+  };
+
   return (
     <>
       <h1 className={styles.pageTitle}>WORK</h1>
 
       <div className={styles.slider}>
-        <swiper-container
-          class="slider"
+        <Swiper
+          className={styles.slider}
+          onSwiper={firstSwiper}
+          modules={{ Navigation, Autoplay }}
           centeredSlides
           scrollbar-clickable="true"
           mousewheel-invert="true"
-          navigation="true"
+          navigation
           autoplay
           loop="true"
           autoplay-delay="1900"
@@ -47,8 +60,9 @@ export default function Work() {
               slidesPerView: 3,
             },
           }}
+          onClick={(swiper) => handleSwiper(swiper)}
         >
-          <swiper-slide>
+          <SwiperSlide>
             <Image
               className={styles.mockupIndigo}
               alt="mockup picture"
@@ -63,8 +77,8 @@ export default function Work() {
               <br />
               Website:link
             </p>
-          </swiper-slide>
-          <swiper-slide>
+          </SwiperSlide>
+          <SwiperSlide>
             <Image
               className={styles.mockIcare}
               alt="mockup picture"
@@ -78,8 +92,8 @@ export default function Work() {
               Web design
               <br />
             </p>
-          </swiper-slide>
-          <swiper-slide>
+          </SwiperSlide>
+          <SwiperSlide>
             <Image
               className={styles.mockSimlift}
               alt="mockup picture"
@@ -93,8 +107,8 @@ export default function Work() {
               Web design
               <br />
             </p>
-          </swiper-slide>
-          <swiper-slide>
+          </SwiperSlide>
+          <SwiperSlide>
             <Image
               className={styles.mockSimlift}
               alt="mockup picture"
@@ -108,10 +122,10 @@ export default function Work() {
               Web design
               <br />
             </p>
-          </swiper-slide>
+          </SwiperSlide>
           <div className={styles["swiper-button-prev"]}></div>
           <div className={styles["swiper-button-next"]}></div>
-        </swiper-container>
+        </Swiper>
       </div>
       <div className={styles.backButton}>
         <span className={styles.arrowLeft}>⇦</span>
