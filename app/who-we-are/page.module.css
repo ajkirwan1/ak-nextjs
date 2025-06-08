@@ -210,13 +210,18 @@ a.secondary {
   animation: slideLeft 1.5s forwards 1.5s;
 }
 
+.columnText p {
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
 .arrow {
   font-size: 25px;
   margin-right: 20px;
 }
 .arrowLeft {
   font-size: 20px;
-  margin-right: 5px;
+  margin-right: 7px;
   margin-top: 10px;
 }
 
@@ -386,54 +391,75 @@ a.secondary {
   }
   .pageTitle {
     font-size: 18px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
   }
   .arrow {
     margin-right: 5px;
     font-size: 7px;
   }
   .arrowLeft {
-    margin-right: 5px;
+    margin-right: 7px;
   }
   .backButton {
     font-size: 15px;
   }
-  .columnLeft {
-    padding-right: 20px;
-    text-align: right;
-    font-size: 10px;
-  }
-  .columnRight {
-    font-size: 10px;
-    padding-left: 10px;
-  }
   .contactColumns * {
     width: auto;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .columnLeft {
+    margin-bottom: 1em;
   }
   .contactColumns {
     margin-top: 0px;
-    padding-top: 60px;
+    padding-top: 40px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .contactColumns > div {
+    width: 100%;
+    padding: 0;
+  }
+  .columnText {
+    text-align: center;
+  }
+  .columnText p {
+    font-size: 15px;
+    margin-bottom: 0.5em;
   }
   .headline {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 2rem;
     color: #e2bb29a6;
     letter-spacing: 0.02rem;
     position: absolute;
     left: 0;
     right: 0;
-    top: 150px;
     width: 100vw;
     text-align: center;
-    top: 199px;
+    top: 140px;
     max-width: 250px;
     margin: 0 auto;
   }
+  .headlineContainer {
+    padding-top: 200px;
+  }
   .columnRight::before {
-    height: calc(120% + 60px);
-    top: -20%;
+    position: relative;
+    margin-bottom: 1em;
+    height: 1px;
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    margin-bottom: 1em;
+    top: 0;
   }
   .columnRight::after {
+    display: none;
     width: 210px;
     bottom: -60px;
   }
@@ -468,6 +494,12 @@ a.secondary {
   .corners > div {
     height: 80px;
     width: 80px;
+  }
+}
+
+@media (min-height: 750px) {
+  .contactColumns {
+    padding-top: 80px;
   }
 }
 

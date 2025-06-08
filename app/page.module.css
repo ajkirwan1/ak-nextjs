@@ -230,7 +230,7 @@ a.secondary {
 
 @media (max-width: 600px) {
   .menu {
-    font-size: 16px;
+    font-size: 18px;
   }
   .logo {
     width: 100vw;

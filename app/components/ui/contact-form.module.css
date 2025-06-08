@@ -19,6 +19,7 @@
 }
 .contactForm {
   width: 25vw;
+  margin-bottom: -65px;
 }
 
 .dbErrorWrapper {

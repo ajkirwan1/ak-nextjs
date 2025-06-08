@@ -11,35 +11,33 @@ export default function WhoWeAre() {
         <span className={styles.whatWeDo}>WHAT WE DO</span>
       </h1>
       <div className={styles.headlineContainer}>
-        <span className={styles.headline}>Full Service Web Development</span>
+        <span className={styles.headline}>
+          Full Service Web and Apps Development
+        </span>
       </div>
       <div className={styles.contactColumns}>
         <div className={styles.columnLeft}>
           <div className={styles.columnText}>
-            We are young creative studio based in the UK.
-            <br />
-            <br />
-            We operate worldwide.
-            <br />
-            <br />
-            We are here to help develop
-            <br />
-            <br />
-            your personal branding.
+            <p>We are young creative studio based in the UK.</p>
+            <p>We operate worldwide.</p>
+            <p>We are here to help develop</p>
+            <p>your personal branding.</p>
           </div>
         </div>
         <div className={styles.columnRight}>
           <div className={styles.columnText}>
-            <span className={styles.arrow}> ↗</span>Graphic design
-            <br />
-            <br />
-            <span className={styles.arrow}>↗ </span> Visual identification
-            <br />
-            <br />
-            <span className={styles.arrow}>↗</span> Front/backend development
-            <br />
-            <br />
-            <span className={styles.arrow}>↗</span>Animation
+            <p>
+              <span className={styles.arrow}>↗</span> Graphic design
+            </p>
+            <p>
+              <span className={styles.arrow}>↗</span> Visual identification
+            </p>
+            <p>
+              <span className={styles.arrow}>↗</span> Front/backend development
+            </p>
+            <p>
+              <span className={styles.arrow}>↗</span> Animation
+            </p>
           </div>
         </div>
       </div>

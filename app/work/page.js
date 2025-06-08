@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import mockupIndigo from "@/public/indigo2mock.png";
-import mockIcare from "@/public/mockIcare.png";
-import mockSimlift from "@/public/mockupsimlift.png";
 import styles from "./page.module.css";
 import { Swiper } from "swiper";
 import { Navigation } from "swiper/modules";
@@ -30,7 +27,7 @@ export default function Work() {
           navigation="true"
           autoplay
           loop="true"
-          autoplay-delay="1900"
+          autoplay-delay="2500"
           autoplay-disable-on-interaction="false"
           center-slides="true"
           style={{
@@ -52,26 +49,77 @@ export default function Work() {
             <Image
               className={styles.mockupIndigo}
               alt="mockup picture"
-              src={mockupIndigo}
+              src="/indigo2mock.png"
+              width={884}
+              height={1776}
             ></Image>
             <p className={styles.slideText}>
-              <strong>ROLE:</strong>
+              <br />
+              <Link
+                className={styles.indigo}
+                href="https://indigo-consulting.gr/"
+              >
+                INDIGO CONSULTING
+              </Link>
               <br />
               Front/backend development
               <br />
               Web design
               <br />
-              Website:link
+              deployment/maintenance
+            </p>
+          </swiper-slide>
+
+          <swiper-slide>
+            <Image
+              className={styles.mockSimlift}
+              alt="mockup picture"
+              src="/mockIcare.png"
+              width={884}
+              height={1776}
+            ></Image>
+            <p className={styles.slideText}>
+              <br />
+              <Link
+                className={styles.indigo}
+                href="https://indigo-consulting.gr/"
+              ></Link>
+              <br />
+              Front/backend development
+              <br />
+              Web design
+              <br />
+            </p>
+          </swiper-slide>
+          <swiper-slide>
+            <Image
+              className={styles.mKruk}
+              alt="mockup picture"
+              src="/mkruk.png"
+              width={884}
+              height={1776}
+            ></Image>
+            <p className={styles.slideText}>
+              <br />
+              <Link className={styles.indigo} href="https://magdalenakruk.com/">
+                MAGDALENA KRUK
+              </Link>
+              <br />
+              Frontend development
+              <br />
+              Web design
+              <br />
             </p>
           </swiper-slide>
           <swiper-slide>
             <Image
               className={styles.mockIcare}
               alt="mockup picture"
-              src={mockIcare}
+              src="/mockupsimlift.png"
+              width={884}
+              height={1776}
             ></Image>
             <p className={styles.slideText}>
-              <strong>ROLE:</strong>
               <br />
               Front/backend development
               <br />
@@ -79,36 +127,7 @@ export default function Work() {
               <br />
             </p>
           </swiper-slide>
-          <swiper-slide>
-            <Image
-              className={styles.mockSimlift}
-              alt="mockup picture"
-              src={mockSimlift}
-            ></Image>
-            <p className={styles.slideText}>
-              <strong>ROLE:</strong>
-              <br />
-              Front/backend development
-              <br />
-              Web design
-              <br />
-            </p>
-          </swiper-slide>
-          <swiper-slide>
-            <Image
-              className={styles.mockSimlift}
-              alt="mockup picture"
-              src={mockSimlift}
-            ></Image>
-            <p className={styles.slideText}>
-              <strong>ROLE:</strong>
-              <br />
-              Front/backend development
-              <br />
-              Web design
-              <br />
-            </p>
-          </swiper-slide>
+
           <div className={styles["swiper-button-prev"]}></div>
           <div className={styles["swiper-button-next"]}></div>
         </swiper-container>

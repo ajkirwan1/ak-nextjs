@@ -45,8 +45,18 @@ export default function ContactForm() {
     });
   };
 
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
   return (
     <>
+      {success && (
+        <p className={classes.success}>
+          Thanks! We will get back to you within 24 hours.
+        </p>
+      )}
+      {error && <p className={classes.error}>{error}</p>}
+
       {state.dbError ? (
         <div className={classes.dbErrorWrapper}>
           <p>{state.dbError}</p>
@@ -63,11 +73,33 @@ export default function ContactForm() {
           </div>
         </div>
       ) : (
-        <Form className={classes.contactForm} action={formAction}>
+        <form
+          className={classes.contactForm}
+          onSubmit={(e) => {
+            e.preventDefault();
+
+            fetch("https://formsubmit.co/akdevelopmentstudio@gmail.com", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: new URLSearchParams(data).toString(),
+            })
+              .then((res) => {
+                if (res.ok) {
+                  setSuccess(true);
+                  setData({ name: "", surname: "", email: "", message: "" });
+                }
+              })
+              .catch(() => {
+                setError("There was a problem submitting your form.");
+              });
+          }}
+        >
           <div className={classes.inputWrapper}>
             <input
               name="name"
-              type="name"
+              type="text"
               placeholder="Name"
               value={data.name}
               onChange={handleChange}
@@ -80,7 +112,7 @@ export default function ContactForm() {
           <div className={classes.inputWrapper}>
             <input
               name="surname"
-              type="name"
+              type="text"
               placeholder="Surname"
               value={data.surname}
               onChange={handleChange}
@@ -102,12 +134,17 @@ export default function ContactForm() {
               <p>{state.validationErrors.email}</p>
             )}
           </div>
-
+          <div className={classes.inputWrapper}>
+            <input
+              type="hidden"
+              name="_next"
+              value="http://localhost:3000/thank-you"
+            />
+          </div>
           <div className={classes.inputWrapper}>
             <textarea
               placeholder="Message"
               name="message"
-              type="text"
               value={data.message}
               onChange={handleChange}
             />
@@ -132,7 +169,7 @@ export default function ContactForm() {
               </motion.button>
             </div>
           )}
-        </Form>
+        </form>
       )}
     </>
   );

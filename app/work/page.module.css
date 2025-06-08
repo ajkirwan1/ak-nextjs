@@ -103,7 +103,7 @@ a.secondary {
 }
 .arrowLeft {
   font-size: 20px;
-  margin-right: 5px;
+  margin-right: 7px;
   margin-top: 10px;
 }
 
@@ -175,6 +175,10 @@ a.secondary {
   height: 60vh;
   width: auto;
 }
+.mKruk {
+  height: 60vh;
+  width: auto;
+}
 .mockIcare {
   height: 62vh;
   width: auto;
@@ -200,12 +204,16 @@ a.secondary {
 }
 
 .slideText {
-  font-size: 15px;
-  margin-top: 40px;
+  font-size: 16px;
+  margin-top: 42px;
   text-align: center;
   color: rgba(150, 150, 150, 1);
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   letter-spacing: 1px;
+}
+.indigo {
+  color: #0056b3;
+  font-weight: 600;
 }
 
 /* Enable hover only on non-touch devices */
@@ -228,13 +236,14 @@ a.secondary {
 
 @media (max-width: 600px) {
   .arrowLeft {
-    margin-right: 5px;
+    margin-right: 7px;
   }
   .backButton {
     font-size: 16px;
   }
   .slideText {
-    margin-top: 20px;
+    margin-top: -5px;
+    font-size: 12px;
   }
   .pageTitle {
     font-size: 24px;

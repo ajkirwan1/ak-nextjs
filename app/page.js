@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
-import logo from "@/public/a-k-logo.png";
+//import logo from "@/public/a-k-logo.png";
 import { motion } from "motion/react";
 import { AnimatePresence } from "motion/react";
 
@@ -24,7 +24,9 @@ export default function Home() {
         <Image
           className={styles.logo}
           alt="image showing the a&k logo"
-          src={logo}
+          src="/a-k-logo.png"
+          width="200"
+          height="200"
         ></Image>
       </div>
       <AnimatePresence mode="wait">
