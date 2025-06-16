@@ -12,38 +12,46 @@ export default function WhoWeAre() {
       </h1>
       <div className={styles.headlineContainer}>
         <span className={styles.headline}>
-          Full Service Web and Apps Development
+          Full service web and apps development
         </span>
       </div>
       <div className={styles.contactColumns}>
         <div className={styles.columnLeft}>
           <div className={styles.columnText}>
-            <p>We are young creative studio based in the UK.</p>
-            <p>We operate worldwide.</p>
-            <p>We are here to help develop</p>
-            <p>your personal branding.</p>
+            <p>We are creative web developing studio based in the UK.</p>
+            <p>Working with clients worldwide.</p>
+            <p>We build smart, elegant websites</p>
+            <p>and help shape bold personal brands.</p>
           </div>
         </div>
         <div className={styles.columnRight}>
           <div className={styles.columnText}>
             <p>
-              <span className={styles.arrow}>↗</span> Graphic design
+              <span className={styles.arrow}>—</span>Graphic design
             </p>
             <p>
-              <span className={styles.arrow}>↗</span> Visual identification
+              <span className={styles.arrow}>—</span>Visual identification
             </p>
             <p>
-              <span className={styles.arrow}>↗</span> Front/backend development
+              <span className={styles.arrow}>—</span>Front/backend development
             </p>
             <p>
-              <span className={styles.arrow}>↗</span> Animation
+              <span className={styles.arrow}>—</span>Animation
+            </p>
+            <p>
+              <span className={styles.arrow}>—</span>UX/UI Design
+            </p>
+            <p>
+              <span className={styles.arrow}>—</span>Branding strategy
+            </p>
+            <p>
+              <span className={styles.arrow}>—</span>SEO Optimization
             </p>
           </div>
         </div>
       </div>
 
       <div className={styles.backButton}>
-        <span className={styles.arrowLeft}>⇦</span>
         <Link href="/">BACK</Link>
       </div>
 

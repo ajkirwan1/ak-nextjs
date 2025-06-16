@@ -27,7 +27,7 @@ export default function Work() {
           navigation="true"
           autoplay
           loop="true"
-          autoplay-delay="2500"
+          autoplay-delay="3000"
           autoplay-disable-on-interaction="false"
           center-slides="true"
           style={{
@@ -83,7 +83,9 @@ export default function Work() {
               <Link
                 className={styles.indigo}
                 href="https://indigo-consulting.gr/"
-              ></Link>
+              >
+                ICARE
+              </Link>
               <br />
               Front/backend development
               <br />
@@ -121,6 +123,10 @@ export default function Work() {
             ></Image>
             <p className={styles.slideText}>
               <br />
+              <Link className={styles.indigo} href="https://https://simlift.eu">
+                SIMLIFT
+              </Link>
+              <br />
               Front/backend development
               <br />
               Web design
@@ -133,7 +139,6 @@ export default function Work() {
         </swiper-container>
       </div>
       <div className={styles.backButton}>
-        <span className={styles.arrowLeft}>⇦</span>
         <Link href="/"> BACK</Link>
       </div>
     </>

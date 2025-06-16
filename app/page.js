@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 //import logo from "@/public/a-k-logo.png";
+import Script from "next/script";
 import { motion } from "motion/react";
 import { AnimatePresence } from "motion/react";
 
@@ -20,15 +21,19 @@ export default function Home() {
     //  </button>
 
     <>
+      <Script src="/myscript.js" strategy="afterInteractive" />
+      <div className="balls"></div>
       <div className={styles.logoContainer}>
-        <Image
-          className={styles.logo}
-          alt="image showing the a&k logo"
-          src="/a-k-logo.png"
-          width="200"
-          height="200"
-        ></Image>
+        <div className="logo-container">
+          <div className="main-logo">
+            <span className="letter">A</span>
+            <span className="letter">&</span>
+            <span className="letter">K</span>
+          </div>
+          <div className="subtitle">Fullstack Development</div>
+        </div>
       </div>
+
       <AnimatePresence mode="wait">
         <motion.div
           // key={router.route}

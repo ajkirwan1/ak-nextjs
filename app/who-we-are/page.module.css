@@ -107,7 +107,7 @@ a.secondary {
   display: flex;
   top: 40px;
   left: 40px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
 }
 
@@ -227,11 +227,11 @@ a.secondary {
 
 .slash {
   width: 1px;
-  height: 10vw;
+  height: 6vw;
   background: white;
   transform: rotate(30deg) scaleY(0.2);
   display: inline-flex;
-  margin: 0 3vw;
+  margin: 0 2vw;
   color: white;
   animation: scaleUp 1s forwards;
   transform-origin: 50%;
@@ -251,7 +251,7 @@ a.secondary {
 .headline {
   font-size: 33px;
   font-weight: 400;
-  color: #e2bb29a6;
+  color: #f0e1c0;
   letter-spacing: 0.07rem;
   left: 0;
   width: 100%;
@@ -428,13 +428,14 @@ a.secondary {
     text-align: center;
   }
   .columnText p {
-    font-size: 15px;
-    margin-bottom: 0.5em;
+    font-size: 14px;
+    margin-bottom: 0.2em;
   }
   .headline {
-    font-size: 22px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 2rem;
-    color: #e2bb29a6;
+    color: #f0e1c0;
     letter-spacing: 0.02rem;
     position: absolute;
     left: 0;

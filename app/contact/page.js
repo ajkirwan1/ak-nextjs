@@ -21,9 +21,12 @@ export default function ContactPage() {
             />
             <div className={styles.letsTalk}>
               <div className={styles.header}>
-                <h1>LET'S BRAND TOGETHER!</h1>
+                <h1>
+                  Have questions?
+                  <br />
+                  We have answers – contact us
+                </h1>
               </div>
-              <p> Discuss your project with us </p>
               <div className={styles.email}>akdevelopmentstudio@gmail.com</div>
             </div>
           </div>
@@ -36,7 +39,6 @@ export default function ContactPage() {
       </div>
 
       <div className={styles.backButton}>
-        <span className={styles.arrowLeft}>⇦</span>
         <Link href="/">BACK</Link>
       </div>
       <div className={styles.copyright}>COPYRIGHT © AKDEVELOPMENT 2025</div>

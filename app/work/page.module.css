@@ -180,7 +180,7 @@ a.secondary {
   width: auto;
 }
 .mockIcare {
-  height: 62vh;
+  height: 60vh;
   width: auto;
 }
 .mockSimlift {
@@ -205,14 +205,13 @@ a.secondary {
 
 .slideText {
   font-size: 16px;
-  margin-top: 42px;
   text-align: center;
   color: rgba(150, 150, 150, 1);
   line-height: 1.8rem;
   letter-spacing: 1px;
 }
 .indigo {
-  color: #0056b3;
+  color: #d7cea9c8;
   font-weight: 600;
 }
 
@@ -242,7 +241,7 @@ a.secondary {
     font-size: 16px;
   }
   .slideText {
-    margin-top: -5px;
+    margin-top: -20px;
     font-size: 12px;
   }
   .pageTitle {
