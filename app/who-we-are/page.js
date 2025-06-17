@@ -12,7 +12,7 @@ export default function WhoWeAre() {
       </h1>
       <div className={styles.headlineContainer}>
         <span className={styles.headline}>
-          Full service web and apps development
+          Full service web and app development
         </span>
       </div>
       <div className={styles.contactColumns}>
@@ -20,8 +20,14 @@ export default function WhoWeAre() {
           <div className={styles.columnText}>
             <p>We are creative web developing studio based in the UK.</p>
             <p>Working with clients worldwide.</p>
-            <p>We build smart, elegant websites</p>
-            <p>and help shape bold personal brands.</p>
+            <p>
+              We design and build modern websites that are fast, functional, and
+              simple.
+            </p>
+            <p>
+              Whether you are building a brand or reinventing one, we help you
+              stand out — with style and clarity.
+            </p>
           </div>
         </div>
         <div className={styles.columnRight}>
