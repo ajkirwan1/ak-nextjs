@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
 import { Swiper } from "swiper";
 import { Navigation } from "swiper/modules";
@@ -46,13 +45,13 @@ export default function Work() {
           }}
         >
           <swiper-slide>
-            <Image
+            <img
               className={styles.mockupIndigo}
               alt="mockup picture"
               src="/indigo2mock.png"
               width={884}
               height={1776}
-            ></Image>
+            />
             <p className={styles.slideText}>
               <br />
               <Link
@@ -71,20 +70,17 @@ export default function Work() {
           </swiper-slide>
 
           <swiper-slide>
-            <Image
+            <img
               className={styles.mockSimlift}
               alt="mockup picture"
               src="/mockIcare.png"
               width={884}
               height={1776}
-            ></Image>
+            />
             <p className={styles.slideText}>
               <br />
-              <Link
-                className={styles.indigo}
-                href="https://indigo-consulting.gr/"
-              >
-                ICARE
+              <Link className={styles.indigo} href="#">
+                ICARE (app under construction)
               </Link>
               <br />
               Front/backend development
@@ -94,13 +90,13 @@ export default function Work() {
             </p>
           </swiper-slide>
           <swiper-slide>
-            <Image
+            <img
               className={styles.mKruk}
               alt="mockup picture"
               src="/mkruk.png"
               width={884}
               height={1776}
-            ></Image>
+            />
             <p className={styles.slideText}>
               <br />
               <Link className={styles.indigo} href="https://magdalenakruk.com/">
@@ -114,16 +110,16 @@ export default function Work() {
             </p>
           </swiper-slide>
           <swiper-slide>
-            <Image
+            <img
               className={styles.mockIcare}
               alt="mockup picture"
               src="/mockupsimlift.png"
               width={884}
               height={1776}
-            ></Image>
+            />
             <p className={styles.slideText}>
               <br />
-              <Link className={styles.indigo} href="https://https://simlift.eu">
+              <Link className={styles.indigo} href="https://simlift.eu">
                 SIMLIFT
               </Link>
               <br />

@@ -138,7 +138,7 @@ export default function ContactForm() {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:3000/thank-you"
+              value="http://ak-development.com.pl/thank-you"
             />
           </div>
           <div className={classes.inputWrapper}>

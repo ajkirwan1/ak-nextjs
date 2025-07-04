@@ -1,8 +1,8 @@
 /** @format */
-"use server";
+//"use server";
 
-import { sendMail } from "@/lib/send-mail";
-import ValidateContactForm from "@/lib/validation/contact-form-validate";
+//import { sendMail } from "@/lib/send-mail";
+//import ValidateContactForm from "@/lib/validation/contact-form-validate";
 
 export async function ContactUs(_, formData) {
   // let validationErrors = [];

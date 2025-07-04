@@ -108,7 +108,8 @@ a.secondary {
 }
 
 .backButton {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   bottom: 30px;
   left: 30px;
   font-size: 20px;
@@ -240,6 +241,7 @@ a.secondary {
     bottom: 20px;
   }
   .copyright {
+    position: fixed;
     font-size: 10px;
     letter-spacing: 0;
   }
@@ -249,7 +251,9 @@ a.secondary {
   .arrowLeft {
     margin-right: 7px;
   }
-
+  .contactForm p {
+    max-width: 200px;
+  }
   .letsTalk p {
     font-size: 14px;
     margin-top: 25px;
@@ -260,6 +264,7 @@ a.secondary {
   }
   .contactColumns {
     flex-direction: column;
+    margin-top: -30px;
   }
   .columnLeft {
     padding: 0;

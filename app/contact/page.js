@@ -1,6 +1,5 @@
 /** @format */
 
-import Image from "next/image";
 import ContactForm from "../components/ui/contactForm";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -12,13 +11,14 @@ export default function ContactPage() {
       <div className={styles.contentWrapper}>
         <div className={styles.contactColumns}>
           <div className={styles.columnLeft}>
-            <Image
+            <img
               src="/envelope.png"
               width={100}
               height={100}
               alt="mail contact icon"
               className={styles.envelope}
             />
+
             <div className={styles.letsTalk}>
               <div className={styles.header}>
                 <h1>
