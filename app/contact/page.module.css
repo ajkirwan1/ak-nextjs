@@ -81,29 +81,42 @@ a.secondary {
   border-color: var(--gray-alpha-200);
   min-width: 180px;
 }
+.contentWrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
 
 .envelope {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 .letsTalk {
   display: block;
 }
 .letsTalk p {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 25px;
   letter-spacing: 0.15rem;
 }
+.header h1 {
+  font-size: 27px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 0.07rem;
+}
 
 .backButton {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   bottom: 30px;
   left: 30px;
   font-size: 20px;
 }
 .arrowLeft {
   font-size: 20px;
-  margin-right: 12px;
+  margin-right: 7px;
   margin-top: 10px;
 }
 
@@ -129,10 +142,10 @@ a.secondary {
   border: 0;
   width: 100%;
   border-bottom: 1px solid #bb1f1f;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   background-color: transparent;
   font-family: inherit;
-  font-size: 18px;
+  font-size: 14px;
   padding-bottom: 8px;
 }
 
@@ -146,36 +159,38 @@ a.secondary {
   outline: none;
 }
 
-.contactForm button[type="submit"] {
+/* .contactForm button[type="submit"] {
   border: none;
   color: white;
   text-transform: uppercase;
   font-size: 18px;
   background: none !important;
-}
+} */
 
 /* ::placeholder {
   color: white;
 } */
 
 .contactColumns {
-  justify-content: center;
-  align-items: center;
   display: flex;
-  height: 100vh;
+  align-items: center;
 }
 .columnLeft {
   padding-right: 200px;
   text-align: center;
   animation: slideDown 1.5s forwards;
 }
+
+.columnRight {
+}
+
 .email {
   margin-top: 40px;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 0.1rem;
 }
 .copyright {
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   right: 30px;
   bottom: 20px;
@@ -226,6 +241,7 @@ a.secondary {
     bottom: 20px;
   }
   .copyright {
+    position: fixed;
     font-size: 10px;
     letter-spacing: 0;
   }
@@ -233,19 +249,22 @@ a.secondary {
     width: 40px;
   }
   .arrowLeft {
-    margin-right: 5px;
+    margin-right: 7px;
   }
-
+  .contactForm p {
+    max-width: 200px;
+  }
   .letsTalk p {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 25px;
   }
   .email {
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 14px;
+    margin-top: 30px;
   }
   .contactColumns {
     flex-direction: column;
+    margin-top: -30px;
   }
   .columnLeft {
     padding: 0;
@@ -286,12 +305,18 @@ a.secondary {
     justify-content: center;
   }
   .contactForm input {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
+  }
+}
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 18px;
+    line-height: 1.8rem;
   }
 }

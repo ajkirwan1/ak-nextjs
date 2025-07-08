@@ -1,0 +1,54 @@
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+.inputWrapper {
+  margin-bottom: 30px;
+}
+.inputWrapper p {
+  font-size: 18px;
+}
+
+.buttonWrapper button {
+  height: 4vh;
+  width: 10vw;
+  background-color: #efeff0;
+  color: black;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.contactForm {
+  width: 25vw;
+  margin-bottom: -65px;
+}
+
+.dbErrorWrapper {
+  text-align: center;
+}
+
+.dbErrorWrapper p {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .buttonWrapper button {
+    height: 4vh;
+    width: 25vw;
+    font-size: 13px;
+  }
+  .contactForm {
+    width: 60vw;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+  .contactForm p {
+    max-width: 200px;
+  }
+  .inputWrapper {
+    margin-bottom: 20px;
+  }
+
+  .inputWrapper p {
+    font-size: 16px;
+  }
+}
